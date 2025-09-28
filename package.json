@@ -12,14 +12,22 @@
     "check": "biome check .",
     "check:fix": "biome check --write .",
     "type-check": "turbo run type-check",
-    "add-component": "pnpm dlx shadcn@latest add --cwd packages/ui"
+    "add-component": "pnpm dlx shadcn@latest add --cwd packages/ui",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.13.1",
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,json,css,md}": [
+      "biome check --write --no-errors-on-unmatched"
+    ]
+  },
   "devDependencies": {
     "@biomejs/biome": "^2.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.3",
     "turbo": "^2.5.8"
   }
 }
