@@ -1,0 +1,1 @@
+// No schemas for now - keep it simple
