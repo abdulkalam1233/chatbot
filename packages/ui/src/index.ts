@@ -3,6 +3,5 @@
 // Export utilities
 
 // Export components
-export * from "./components/button";
-export * from "./components/input";
+export * from "./components";
 export * from "./lib/utils";
