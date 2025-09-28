@@ -1,7 +1,7 @@
 import type { ChatMessage as ChatMessageType } from "@repo/shared";
 import { ScrollArea } from "@repo/ui";
 import type React from "react";
-import { ChatMessage } from "./ChatMessage";
+import { ChatMessage } from "./chat-message";
 
 interface MessageListProps {
   messages: ChatMessageType[];

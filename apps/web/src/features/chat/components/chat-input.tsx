@@ -2,7 +2,7 @@ import type { ChatModel } from "@repo/shared";
 import { Button, Textarea } from "@repo/ui";
 import type React from "react";
 import { useState } from "react";
-import { ModelSelector } from "./ModelSelector";
+import { ModelSelector } from ".";
 
 interface ChatInputProps {
   onSend: (value: string) => void;
