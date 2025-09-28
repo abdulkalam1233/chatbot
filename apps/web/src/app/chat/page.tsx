@@ -2,7 +2,7 @@
 
 import type { ChatMessage } from "@repo/shared";
 import { CHAT_MODELS } from "@repo/shared";
-import React, { useState } from "react";
+import { useState } from "react";
 import { ChatInput, MessageList } from "../../features/chat/components";
 
 export default function Page() {

@@ -24,7 +24,12 @@
     "format": "biome format --write .",
     "type-check": "tsc --noEmit"
   },
-  "keywords": ["dtos", "types", "shared", "chatbot"],
+  "keywords": [
+    "dtos",
+    "types",
+    "shared",
+    "chatbot"
+  ],
   "author": "Abdul kalam",
   "license": "UNLICENSED",
   "packageManager": "pnpm@10.13.1",
