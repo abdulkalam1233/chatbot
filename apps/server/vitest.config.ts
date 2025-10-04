@@ -7,6 +7,9 @@ export default defineConfig({
     environment: "node",
     include: ["src/**/*.spec.ts", "src/**/*.test.ts"],
     exclude: ["test/**/*"],
+    alias: {
+      "@": "./src",
+    },
     coverage: {
       provider: "v8",
       include: ["src/**/*"],

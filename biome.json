@@ -53,6 +53,9 @@
     "formatter": {
       "quoteStyle": "double",
       "trailingCommas": "es5"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
     }
   },
   "json": {
@@ -73,6 +76,16 @@
           },
           "style": {
             "useImportType": "error"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["apps/server/**/*.{ts,tsx}"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useImportType": "off"
           }
         }
       }

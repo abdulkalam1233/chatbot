@@ -1,12 +1,18 @@
 import { Module } from "@nestjs/common";
-import { AppController } from "./app.controller";
-import { AppService } from "./app.service";
-import { ChatController } from "./chat/chat/chat.controller";
-import { ChatModule } from "./chat/chat/chat.module";
+import { ConfigModule } from "@nestjs/config";
+import { DatabaseModule } from "@/db/database.module";
+import { ApiResponseFactory } from "@/lib/api-response-factory";
+import { ConversationsModule } from "./conversations/conversations.module";
 
 @Module({
-  imports: [ChatModule],
-  controllers: [AppController, ChatController],
-  providers: [AppService],
+  imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
+    ConversationsModule,
+    DatabaseModule,
+  ],
+  controllers: [],
+  providers: [ApiResponseFactory],
 })
 export class AppModule {}

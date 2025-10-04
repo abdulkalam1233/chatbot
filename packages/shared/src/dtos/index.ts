@@ -1,7 +1,6 @@
-// Basic API response
 export interface ApiResponse<T = unknown> {
-  success: boolean;
-  data?: T;
-  message?: string;
-  error?: string;
+  readonly data?: T;
+  readonly error?: string;
 }
+
+export * from "./conversations";
